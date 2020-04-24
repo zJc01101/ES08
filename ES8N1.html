@@ -1,0 +1,24 @@
+<script>
+    class Numadd {
+        constructor() {
+            this.num = 0;
+            this.str = "abcd";
+
+            setInterval(function () {
+                if (this.num != 5) {
+                    this.num++;
+                    console.log(this.num);
+                }
+            }.bind(this), 1000)
+        }
+        strobj = {
+            str: "xyz",
+            dispstr: () => {
+                console.log(numAdd.strobj.str);
+            },
+
+        }
+    }
+    let numAdd = new Numadd();
+    numAdd.strobj.dispstr();
+</script>
